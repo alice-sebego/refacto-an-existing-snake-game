@@ -1,0 +1,23 @@
+nav{
+    padding: 15px 0;
+    ul{
+        li{
+            display: inline-block;
+            margin: 3px;
+            padding-bottom: 3px;
+            border-bottom: 2px solid $grey;
+            font-weight: bold;
+            &:hover{
+                border-bottom: 2px solid $greenSnake;
+            }
+            a{
+                color: $grey;
+                text-decoration: none;
+                transition: color 0.2s ease-in-out;
+                &:hover{
+                    color: $greenSnake;
+                }
+            }
+        }
+    }
+}
