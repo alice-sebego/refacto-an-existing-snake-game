@@ -23,6 +23,10 @@ h3 {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.72px;
+  transition: background-color 0.4s ease-in-out;
+}
+.cta:hover {
+  background-color: #328c32;
 }
 
 ol {
