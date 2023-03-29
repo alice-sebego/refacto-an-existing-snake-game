@@ -180,37 +180,47 @@ body#snake {
   height: 100%;
   overflow-y: hidden;
 }
-body header {
+body#snake header {
   padding: 3px 0;
   text-align: center;
 }
-body header .logo {
+body#snake header .logo {
   width: 35px;
   margin: auto;
   border-bottom: 3px solid rgb(64, 177, 64);
 }
-body header .logo img {
+body#snake header .logo img {
   width: 35px;
   height: auto;
 }
-body header h1 {
+body#snake header h1 {
   color: rgb(64, 177, 64);
   font-size: 1.1rem;
 }
-body section {
+body#snake section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body section p {
+body#snake section p {
   margin-bottom: 3px;
   font-size: 0.8rem;
 }
-body section p#score {
+body#snake section p#score {
   font-weight: bold;
 }
-body section #myCanvas {
+body#snake section #myCanvas {
   border: 1px solid black;
+}
+@media screen and (min-width: 1024px) {
+  body#snake footer {
+    margin-top: 75px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body#snake footer {
+    margin-top: 245px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
