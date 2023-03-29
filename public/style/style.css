@@ -168,7 +168,7 @@ html body .rules .container h2 {
 html body .rules .container .go-game {
   text-align: center;
 }
-html body .rules .container .go-game.cta {
+html body .rules .container .go-game .cta {
   width: 65%;
 }
 
