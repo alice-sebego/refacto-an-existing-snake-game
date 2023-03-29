@@ -172,7 +172,7 @@ html body .rules .container .go-game.cta {
   width: 65%;
 }
 
-body {
+body#snake {
   height: 100%;
   overflow-y: hidden;
 }
