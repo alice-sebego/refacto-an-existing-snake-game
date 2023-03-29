@@ -82,7 +82,9 @@ function moveSnake() {
 }
 
 function gameOver() {
-  alert("Game Over !");
+  ctx.fillStyle = "#40B140";
+  ctx.font = "50px Verdana";
+  ctx.fillText("Game Over", canvas.width / 6.5, canvas.height / 2);
   gameStarted = false;
 }
 

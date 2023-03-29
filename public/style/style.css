@@ -172,37 +172,40 @@ html body .rules .container .go-game.cta {
   width: 65%;
 }
 
-header {
+body {
+  height: 100%;
+  overflow-y: hidden;
+}
+body header {
   padding: 3px 0;
   text-align: center;
 }
-header .logo {
+body header .logo {
   width: 35px;
   margin: auto;
   border-bottom: 3px solid rgb(64, 177, 64);
 }
-header .logo img {
+body header .logo img {
   width: 35px;
   height: auto;
 }
-header h1 {
+body header h1 {
   color: rgb(64, 177, 64);
   font-size: 1.1rem;
 }
-
-section {
+body section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-section p {
+body section p {
   margin-bottom: 3px;
   font-size: 0.8rem;
 }
-section p#score {
+body section p#score {
   font-weight: bold;
 }
-section #myCanvas {
+body section #myCanvas {
   border: 1px solid black;
 }
 

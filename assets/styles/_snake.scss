@@ -1,33 +1,37 @@
-header {
-  padding: 3px 0;
-  text-align: center;
-  .logo {
-    width: 35px;
-    margin: auto;
-    border-bottom: 3px solid $greenSnake;
-    img {
+body{
+  height: 100%;
+   overflow-y: hidden;
+  header {
+    padding: 3px 0;
+    text-align: center;
+    .logo {
       width: 35px;
-      height: auto;
+      margin: auto;
+      border-bottom: 3px solid $greenSnake;
+      img {
+        width: 35px;
+        height: auto;
+      }
+    }
+    h1 {
+      color: $greenSnake;
+      font-size: 1.1rem;
     }
   }
-  h1 {
-    color: $greenSnake;
-    font-size: 1.1rem;
-  }
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  p {
-    margin-bottom: 3px;
-    font-size: 0.8rem;
-    &#score {
-      font-weight: bold;
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      margin-bottom: 3px;
+      font-size: 0.8rem;
+      &#score {
+        font-weight: bold;
+      }
     }
-  }
-  #myCanvas {
-    border: 1px solid black;
+    #myCanvas {
+      border: 1px solid black;
+    }
   }
 }
