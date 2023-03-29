@@ -29,6 +29,21 @@ h3 {
   background-color: #328c32;
 }
 
+button {
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.65rem;
+  font-weight: bold;
+  transition: transform 0.4s ease-in-out;
+}
+button:hover {
+  transform: scale(1.1);
+}
+
 ol {
   display: block;
   width: 65%;
@@ -184,23 +199,16 @@ body#snake header {
   padding: 3px 0;
   text-align: center;
 }
-body#snake header .logo {
-  width: 35px;
-  margin: auto;
-  border-bottom: 3px solid rgb(64, 177, 64);
-}
-body#snake header .logo img {
-  width: 35px;
-  height: auto;
-}
-body#snake header h1 {
-  color: rgb(64, 177, 64);
-  font-size: 1.1rem;
+body#snake header nav {
+  padding: 2px 0;
 }
 body#snake section {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+body#snake section .buttons #start {
+  background-color: rgb(64, 177, 64);
 }
 body#snake section p {
   margin-bottom: 3px;

@@ -21,6 +21,22 @@ h3 {
   }
 }
 
+button{
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+  color: $white;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: .65rem;
+  font-weight: bold;
+  transition: transform 0.4s ease-in-out;
+
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
 ol {
   display: block;
   width: 65%;

@@ -50,7 +50,7 @@ var dx = 10;
 var dy = 0;
 var gameStarted = false;
 
-function startGame() {
+function startGame(int) {
   snake = [
     // premier = tête du serpent
     { x: 200, y: 200 },
@@ -64,7 +64,7 @@ function startGame() {
   appleX = 100;
   appleY = 100;
   gameStarted = true;
-  setTimeout(main, interval);
+  setTimeout(main, int);
 }
 
 function moveSnake() {
@@ -86,6 +86,7 @@ function gameOver() {
   ctx.font = "50px Verdana";
   ctx.fillText("Game Over", canvas.width / 6.5, canvas.height / 2);
   gameStarted = false;
+  interval = 100;
 }
 
 function checkCollision() {
@@ -104,9 +105,13 @@ function checkCollision() {
   }
 }
 
+var startBtn = document.querySelector("#start");
 document.addEventListener("keydown", function (event) {
   if (!gameStarted) {
-    startGame();
+    startBtn.addEventListener("click", function () {
+      score = 0;
+      startGame(interval);
+    });
   } else {
     switch (event.keyCode) {
       // Left
