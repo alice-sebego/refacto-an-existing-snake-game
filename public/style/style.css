@@ -120,6 +120,18 @@ nav ul li a:hover {
 html {
   scroll-behavior: smooth !important;
 }
+html body header {
+  text-align: center;
+}
+html body header .logo {
+  width: 35px;
+  margin: auto;
+  border-bottom: 3px solid rgb(64, 177, 64);
+}
+html body header .logo img {
+  width: 35px;
+  height: auto;
+}
 html body .featured {
   min-height: 100vh;
   background-image: url("/assets/images/Matopeli_telmac_1800-min.jpg");
@@ -147,6 +159,7 @@ html body .introduction {
   padding: 50px 0;
 }
 html body .introduction .container {
+  margin: auto;
   width: 65%;
   display: flex;
 }
@@ -178,6 +191,7 @@ html body .rules {
   padding: 25px 0;
 }
 html body .rules .container {
+  margin: auto;
   width: 65%;
 }
 html body .rules .container h2 {
