@@ -106,13 +106,14 @@ function checkCollision() {
 }
 
 var startBtn = document.querySelector("#start");
-document.addEventListener("keydown", function (event) {
+startBtn.addEventListener("click", function () {
   if (!gameStarted) {
-    startBtn.addEventListener("click", function () {
-      score = 0;
-      startGame(interval);
-    });
-  } else {
+    score = 0;
+    startGame(interval);
+  }
+});
+document.addEventListener("keydown", function (event) {
+  if (gameStarted) {
     switch (event.keyCode) {
       // Left
       case 37:
